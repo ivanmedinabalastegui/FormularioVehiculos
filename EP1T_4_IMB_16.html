@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Ejercicio Puntuable EP1T-4</title>
+    <link rel="stylesheet" type="text/css" href="estilos.css">
+</head>
+<body>
+<form method="POST" action="mailto:atolon@fundacionsafa.es" target="_blank">
+    <!--Para enviar un email al correo puesto-->
+    <h1> Pruebe su próximo vehículo </h1> <!--Encabezado del formulario-->
+    <ul style="list-style-type:none"> <!--Crea una lista-->
+        <li><label for "nombre">Nombre: </label><input type="text" name="nombre" placeholder="Tu nombre" required></li>
+        <!--Deja introducir un dato por teclado-->
+        <hr>
+        <li><label for "apellidos">Apellidos: </label><input type="text" name="apellidos" placeholder="Tus apellidos"
+                                                             required></li>
+        <hr>
+        <li><label for "email">Email: </label><input type="text" name="email" placeholder="etiqueta@dominio.es"
+                                                     required></li>
+        <hr>
+        <li><label for "años de carnet">Años de carnet: </label><input type="number" name="años_carnet" required></li>
+        <hr>
+        <li><label for "precio buscado">Precio buscado: </label><input type="range" name="precio" value="5000"
+                                                                       min="5000" max="100000" step="1000"> Valor
+            inicial: 5.000 Valor final 100.000
+        </li> <!--Crea un input de tipo "range" que permite ajustar el precio deseado-->
+        <hr>
+        <li><label for "combustible">Tipo Combustible: </label>
+            <select name="combustible" required>
+                <option value="0"></option>
+                <option value="1">Híbrido</option>
+                <option value="2">Eléctrico</option>
+                <option value="3">Gasolina</option>
+                <option value="4">GLP</option>
+            </select></li> <!--Crea un menú con opciones (en este caso cuatro)-->
+        <hr>
+        <li><label for "Color">Color preferido: </label><input type="color" name="colorElegido" required></li>
+        <!--Permite elegir un color-->
+        <hr>
+        <li><label for "sitio_web">Sitio web habitual: </label><input type="text" name="nombre"
+                                                                      placeholder="http://fundacionsafa.es" required>
+        </li>
+        <hr>
+        <li><label for "fecha_prueba">Fecha de la prueba: </label><input type="date" name="fecha" required></li>
+        <!--Permite introducir una fecha-->
+        <hr>
+        <li><label for "detalles">A tener en cuenta: </label></li>
+        <textarea name="texto" rows="8" cols="50" required></textarea>
+        <!--Deja un párrafo vacío para que puedan dar detalles-->
+        <hr>
+        <li><label for "cupón">Subida cupón PDF: </label><input type="file" name="archivo" required></li>
+        <!--Permite adjuntar un archivo-->
+        <hr>
+        <input type="submit" value="Enviar Datos" class="boton">
+        <!--Sirve para enviar el formulario al correo puesto en el "form"-->
+        <hr>
+</form>
+</body>
+</html>

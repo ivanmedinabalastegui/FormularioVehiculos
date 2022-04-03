@@ -1,0 +1,33 @@
+h1 {
+    background-image: url("ppaper.jpg");
+    border-style: solid;
+    border-radius: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 50px;
+    width: 500px;
+    text-align: center;
+}
+
+hr {
+    color: #DDD;
+}
+
+input {
+    margin-right: 550;
+    border-radius: 2px;
+}
+
+label {
+    width: 25%;
+}
+
+input.boton {
+    background-color: #42AF4B;
+    color: white;
+    width: 100px;
+}
+
+select {
+    width: 200px;
+}
